@@ -113,10 +113,10 @@ func messageHandler(client mqtt.Client, msg mqtt.Message) {
 
 // SaveData 将收到的设备数据历史记录保存到oss
 func SaveData(data, topic string) {
-	endpoint := ""
-	accessKeyId := ""
-	accessKeySecret := ""
-	bucketName := ""
+	// endpoint := ""
+	// accessKeyId := ""
+	// accessKeySecret := ""
+	// bucketName := ""
 
 	// 创建OSSClient实例
 	client, err := oss.New(endpoint, accessKeyId, accessKeySecret)
